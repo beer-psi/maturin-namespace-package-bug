@@ -4,7 +4,7 @@ use pyo3::prelude::*;
 /// Formats the sum of two numbers as string.
 #[pyfunction]
 fn create_opus_decoder() {
-    Decoder::new(SampleRate::Hz48000, Channels::Stereo);
+    let _ = Decoder::new(SampleRate::Hz48000, Channels::Stereo);
 }
 
 /// A Python module implemented in Rust.
